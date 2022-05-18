@@ -1,0 +1,157 @@
+/*General Styling */
+/* ********************************************* */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+/* To center the card in the middle of the screen */
+/* ********************************************** */
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Dimensions and spacing of the NFT-card */
+/* ********************************************** */
+.nft-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: hsl(216, 50%, 16%);
+  width: 22rem;
+  height: 100%;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  box-shadow: 0px 1.5rem 1.5rem 2.5rem hsla(240, 67%, 7%, 0.1);
+}
+
+/* The NFT-image */
+/* ********************************************** */
+.nft {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.nft-image {
+  display: block;
+  width: 100%;
+}
+
+.overlay:hover,
+.overlay:active {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease;
+  border-radius: inherit;
+}
+
+.view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* Content of the NFT */
+/* ********************************************** */
+.title-link:link,
+.title-link:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+.title-link:hover,
+.title-link:active {
+  color: hsl(178, 100%, 50%);
+}
+
+.description {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.technical-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eth-price {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  gap: 0.4rem;
+  color: hsl(178, 100%, 50%);
+}
+
+.days-left {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 300;
+  gap: 0.4rem;
+  color: hsl(215, 51%, 70%);
+}
+
+/* Creator */
+/* ********************************************** */
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.avatar {
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 999px;
+}
+
+.creation-of {
+  display: flex;
+  font-size: 1rem;
+}
+
+.link-creator:link,
+.link-creator:visited {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.link-creator:hover,
+.link-creator:active {
+  color: hsl(178, 100%, 50%);
+}
